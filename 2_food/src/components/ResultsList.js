@@ -2,9 +2,9 @@ import React from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 
 const ResultsList = ({title, results}) => {
-  
-  console.log ('ResultsList->title:', title);
-  console.log ('ResultsList->results:', results);
+
+  // console.log ('ResultsList->title:', title);
+  // console.log ('ResultsList->results:', results);
 
   return (
     <View>
@@ -14,7 +14,7 @@ const ResultsList = ({title, results}) => {
         horizontal={true}
         data={results}
         keyExtractor={result => result.id}
-        renderItem={item => {
+        renderItem={({item}) => {
           return <Text>{item.name}</Text>;
         }}
       />
