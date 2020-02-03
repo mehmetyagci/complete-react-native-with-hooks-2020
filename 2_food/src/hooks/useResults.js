@@ -20,7 +20,7 @@ export default () => {
       //console.log ('response2:', response);
       //console.log ('response.data2:', response.data);
       //console.log ('response.data.businesses2:', response.data.businesses);
-      setResults (Object.values (response.data.businesses));
+      setResults (response.data.businesses);
       // console.log (
       //   'response.data.businesses->keys:',
       //   Object.keys (response.data.businesses)
