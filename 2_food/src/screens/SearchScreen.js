@@ -35,11 +35,11 @@ const SearchScreen = () => {
       <Text> We have found {results.length} results </Text>
       {errorMessage ? <Text>ErrorMessage: {errorMessage}</Text> : null}
       <ResultsList
-        results={filterResultsByPrice ('₺')}
+        results={filterResultsByPrice ('$')}
         title="Cost Effective"
       />
-      <ResultsList results={filterResultsByPrice ('₺₺')} title="Bit Pricer" />
-      <ResultsList results={filterResultsByPrice ('₺₺₺')} title="Big Spender" />
+      <ResultsList results={filterResultsByPrice ('$$')} title="Bit Pricer" />
+      <ResultsList results={filterResultsByPrice ('$$$')} title="Big Spender" />
     </View>
   );
 };

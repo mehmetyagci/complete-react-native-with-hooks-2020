@@ -13,11 +13,11 @@ export default () => {
         params: {
           limit: 50,
           term: searchTerm,
-          location: 'istanbul',
+          location: 'columbus',
         },
       });
 
-      console.log ('response11:', response);
+      console.log ('response13:', response);
       //console.log ('response.data2:', response.data);
       //console.log ('response.data.businesses2:', response.data.businesses);
       setResults (response.data.businesses);
