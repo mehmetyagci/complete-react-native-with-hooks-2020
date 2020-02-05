@@ -13,7 +13,7 @@ export default () => {
         params: {
           limit: 50,
           term: searchTerm,
-          location: 'columbus',
+          location: 'istanbul',
         },
       });
 
@@ -39,7 +39,7 @@ export default () => {
   // is first rendered. BAD CODE!
   // searchApi ('pasta');
   useEffect (() => {
-    searchApi ('pasta');
+    searchApi ('pizza');
   }, []);
 
   return [searchApi, results, errorMessage];

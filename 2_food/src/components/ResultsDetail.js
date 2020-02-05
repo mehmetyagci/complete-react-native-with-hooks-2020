@@ -5,7 +5,7 @@ const ResultsDetail = ({result}) => {
   console.log ('ResultsDetail->result.name2:', result.name);
 
   return (
-    <View>
+    <View style={styles.container}>
       <Image style={styles.image} source={{uri: result.image_url}} />
       <Text style={styles.name}>{result.name}</Text>
       <Text>{result.rating} Stars, {result.review_count} Reviews</Text>
@@ -14,23 +14,16 @@ const ResultsDetail = ({result}) => {
 };
 
 const styles = StyleSheet.create ({
+  container: {
+    marginLeft: 15,
+  },
   image: {
     width: 250,
     height: 120,
     borderRadius: 4,
+    marginBottom: 5,
   },
   name: {
-    fontWeight: 'bold',
-  },
-  detailStyle: {
-    backgroundColor: '#f9c2ff',
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
-  },
-  detailTitle: {
-    color: 'red',
-    fontSize: 12,
     fontWeight: 'bold',
   },
 });
