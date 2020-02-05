@@ -8,6 +8,11 @@ const ResultsList = ({title, results, navigation}) => {
   //console.log ('ResultsList->title2:', title);
   //console.log ('ResultsList->results2:', results);
 
+  // if results empty show nothing
+  if (!results.length) {
+    return null;
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
