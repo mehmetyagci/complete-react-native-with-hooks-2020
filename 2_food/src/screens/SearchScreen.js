@@ -23,7 +23,7 @@ const SearchScreen = () => {
   };
 
   return (
-    <View style={{flex: 1}}>
+    <>
       <SearchBar
         term={term}
         onTermChange={setTerm}
@@ -32,7 +32,7 @@ const SearchScreen = () => {
       {/* onTermSubmit={() => searchApi ()} */}
       {/* <Text>Search Screen</Text> */}
       {/* <Text> {term} results: </Text> */}
-      <Text> We have found {results.length} results </Text>
+      {/*<Text> We have found {results.length} results </Text>*/}
       {errorMessage ? <Text>ErrorMessage: {errorMessage}</Text> : null}
       <ScrollView>
         <ResultsList
@@ -45,7 +45,7 @@ const SearchScreen = () => {
           title="Big Spender"
         />
       </ScrollView>
-    </View>
+    </>
   );
 };
 
